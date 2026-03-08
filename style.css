@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    height: 100vh;
+
+    background: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial;
+}
+
+.center {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+button {
+    font: 24px;
+    padding: 20px 40px;
+    background: hotpink;
+    border: none;
+    border-radius: 360px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+#message {
+    margin-top: 40px;
+    font-size: 48px;
+    color: hotpink;
+    display: none;
+}
+
+.heart {
+    position: fixed;
+    color: hotpink;
+    font-size: 24px;
+    animation: fly 6s linear infinite;
+}
+
+@keyframes fly {
+    from {
+        transform: translateY(100vh);
+    }
+    to {
+        transform: translateY(-10vh);
+    }
+}
